@@ -11,22 +11,22 @@ function MusicPlayer() {
           id: 1,
           title: "DRIFTING",
           artist: "NF",
-          audioSrc: "/MusicAssets/tracks/ann/NF_-_DRIFTING_72874017.mp3",
-          coverSrc: "/MusicAssets/images/ann/nf-drifting.jpeg"
+          audioSrc: "./MusicAssets/tracks/ann/NF_-_DRIFTING_72874017.mp3",
+          coverSrc: "./MusicAssets/images/ann/nf-drifting.jpeg"
         },
         {
           id: 2,
           title: "Многоэтажные чувства",
           artist: "Ваня Дмитриенко",
-          audioSrc: "/MusicAssets/tracks/ann/Vanya_Dmitrienko_-_Mnogojetazhnye_chuvstva_iz_seriala_Plaksa-2_78702208.mp3",
-          coverSrc: "/MusicAssets/images/ann/300x300 (1).jpeg"
+          audioSrc: "./MusicAssets/tracks/ann/Vanya_Dmitrienko_-_Mnogojetazhnye_chuvstva_iz_seriala_Plaksa-2_78702208.mp3",
+          coverSrc: "./MusicAssets/images/ann/300x300 (1).jpeg"
         },
         {
           id: 3,
           title: "РЕВНУЮ",
           artist: "Aarne, Bushido zho, Liza Evans",
-          audioSrc: "/MusicAssets/tracks/ann/Aarne_BUSHIDO_ZHO_Liza_Evans_-_REVNUYU_78154712.mp3",
-          coverSrc: "/MusicAssets/images/ann/CIWhj9YXBGjL6r_JeDe47GaFOvdcO-vNiz16Cs15wOKhnlDxPQCsFwr1QIY49eoVrNVt_D-O-n7FQJQxMUkXTLjy.jpeg"
+          audioSrc: "./MusicAssets/tracks/ann/Aarne_BUSHIDO_ZHO_Liza_Evans_-_REVNUYU_78154712.mp3",
+          coverSrc: "./MusicAssets/images/ann/CIWhj9YXBGjL6r_JeDe47GaFOvdcO-vNiz16Cs15wOKhnlDxPQCsFwr1QIY49eoVrNVt_D-O-n7FQJQxMUkXTLjy.jpeg"
         },
       ]
     },
@@ -38,22 +38,22 @@ function MusicPlayer() {
           id: 1,
           title: "Найди меня",
           artist: "Beautiful Boys",
-          audioSrc: "/MusicAssets/tracks/elena/Beautiful_Boys_-_Najjdi_menya_b64f0d176.mp3",
-          coverSrc: "/MusicAssets/images/elena/findme-1000x1000x1.png"
+          audioSrc: "./MusicAssets/tracks/elena/Beautiful_Boys_-_Najjdi_menya_b64f0d176.mp3",
+          coverSrc: "./MusicAssets/images/elena/findme-1000x1000x1.png"
         },
         {
           id: 2,
           title: "Аленка",
           artist: "Тима Белорусских",
-          audioSrc: "/MusicAssets/tracks/elena/Tima_Belorusskikh_-_Aljonka_65045815.mp3",
-          coverSrc: "/MusicAssets/images/elena/alenka-1000x1000x1 (1).png"
+          audioSrc: "./MusicAssets/tracks/elena/Tima_Belorusskikh_-_Aljonka_65045815.mp3",
+          coverSrc: "./MusicAssets/images/elena/alenka-1000x1000x1 (1).png"
         },
         {
           id: 3,
           title: "Такая нежная любовь",
           artist: "Киррил Мойтон, Beautiful boys",
-          audioSrc: "/MusicAssets/tracks/elena/kirill-mojjton-feat.-beautiful-boys-nezhnaja-ljubov.mp3",
-          coverSrc: "/MusicAssets/images/elena/300x300.jpeg"
+          audioSrc: "./MusicAssets/tracks/elena/kirill-mojjton-feat.-beautiful-boys-nezhnaja-ljubov.mp3",
+          coverSrc: "./MusicAssets/images/elena/300x300.jpeg"
         },
       ]
     },    {
@@ -64,22 +64,22 @@ function MusicPlayer() {
           id: 1,
           title: "The Show Must Go On",
           artist: "Queen",
-          audioSrc: "/MusicAssets/tracks/michael/Queen_-_The_Show_Must_Go_On_47828534.mp3",
-          coverSrc: "/MusicAssets/images/michael/300x3002.jpeg"
+          audioSrc: "./MusicAssets/tracks/michael/Queen_-_The_Show_Must_Go_On_47828534.mp3",
+          coverSrc: "./MusicAssets/images/michael/300x3002.jpeg"
         },
         {
           id: 2,
           title: "Лесник",
           artist: "Король и Шут",
-          audioSrc: "/MusicAssets/tracks/michael/Korol_i_SHut_-_Lesnik_62571704.mp3",
-          coverSrc: "/MusicAssets/images/michael/300x300.jpeg"
+          audioSrc: "./MusicAssets/tracks/michael/Korol_i_SHut_-_Lesnik_62571704.mp3",
+          coverSrc: "./MusicAssets/images/michael/300x300.jpeg"
         },
         {
           id: 3,
           title: "Michelle",
           artist: "The Beatles",
-          audioSrc: "/MusicAssets/tracks/michael/The_Beatles_-_Michelle_47950266.mp3",
-          coverSrc: "/MusicAssets/images/michael/300x300 (1).jpeg"
+          audioSrc: "./MusicAssets/tracks/michael/The_Beatles_-_Michelle_47950266.mp3",
+          coverSrc: "./MusicAssets/images/michael/300x300 (1).jpeg"
         },
       ]
     }
