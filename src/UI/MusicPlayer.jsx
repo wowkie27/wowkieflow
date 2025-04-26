@@ -207,7 +207,7 @@ function MusicPlayer() {
       audio.removeEventListener('ended', handleEnded);
       audio.removeEventListener('error', handleError);
     };
-  }, [currentTrackIndex, currentPlaylistIndex, state.volume,currentTrack.audioSrc, state.isPlaying]);
+  }, [currentTrackIndex, currentPlaylistIndex,currentTrack.audioSrc, state.isPlaying]);
 
   const togglePlay = () => {
     if (!audioRef.current) return;
