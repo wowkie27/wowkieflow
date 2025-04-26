@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root {
+    /* Основные цвета */
+    --color-primary: hsl(235, 21%, 21%);    /* Тёмный сине-серый */
+    --color-secondary: hsl(218, 17%, 62%);  /* Серо-голубой */
+    --color-light: hsl(197, 24%, 94%);      /* Светлый фон */
+    --color-accent-red: hsl(353, 86%, 54%); /* Ярко-красный */
+    --color-accent-darkred: hsl(350, 96%, 43%); /* Тёмно-красный */
+  }
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: 100% auto; 
+    background: var(--color-primary);
+}
