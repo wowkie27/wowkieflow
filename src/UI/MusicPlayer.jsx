@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect,useCallback } from "react";
+import { FaStepBackward, FaStepForward, FaPlay, FaPause } from 'react-icons/fa';
 import './MusicPlayer.css';
 
 import nfAudio from './MusicAssets/tracks/ann/NF_-_DRIFTING_72874017.mp3';
@@ -284,15 +285,16 @@ function MusicPlayer() {
           </div>
           
           <div className="controls-div">
-            <button className="prev-button control-button" onClick={handlePrev}>⏮</button>
-            <button 
-              className="play-button control-button"
-              onClick={togglePlay}
-            >
-              {state.isPlaying ? '⏸' : '⏵'}
-            </button>
-            <button className="next-button control-button" onClick={handleNext}>⏭</button> 
-          </div>
+  <button className="prev-button control-button" onClick={handlePrev}>
+    <FaStepBackward />
+  </button>
+  <button className="play-button control-button" onClick={togglePlay}>
+    {state.isPlaying ? <FaPause /> : <FaPlay />}
+  </button>
+  <button className="next-button control-button" onClick={handleNext}>
+    <FaStepForward />
+  </button> 
+</div>
           
           <div className="volume-controls">
             <input 
