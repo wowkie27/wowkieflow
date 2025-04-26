@@ -38,10 +38,10 @@ function MusicPlayer() {
         },
         {
           id: 2,
-          title: "Многоэтажные чувства",
-          artist: "Ваня Дмитриенко",
-          audioSrc: vanyaAudio,
-          coverSrc: vanyaImage
+          title: "Такая нежная любовь",
+          artist: "Киррил Мойтон, Beautiful boys",
+          audioSrc: kirillAudio,
+          coverSrc: kirillImage
         },
         {
           id: 3,
@@ -72,10 +72,10 @@ function MusicPlayer() {
         },
         {
           id: 3,
-          title: "Такая нежная любовь",
-          artist: "Киррил Мойтон, Beautiful boys",
-          audioSrc: kirillAudio,
-          coverSrc: kirillImage
+          title: "Многоэтажные чувства",
+          artist: "Ваня Дмитриенко",
+          audioSrc: vanyaAudio,
+          coverSrc: vanyaImage
         },
       ]
     },
