@@ -337,7 +337,7 @@ function MusicPlayer() {
               </div>
               {index === currentTrackIndex && (
                 <span className="playlist-item-status">
-                  {state.isPlaying ? '▶' : '⏸'}
+                  {state.isPlaying ? <FaPlay /> : <FaPause />}
                 </span>
               )}
             </div>
