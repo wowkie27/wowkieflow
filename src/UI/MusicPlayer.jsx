@@ -1,7 +1,28 @@
 import React, { useState, useRef, useEffect,useCallback } from "react";
 import './MusicPlayer.css';
 
+import nfAudio from './MusicAssets/tracks/ann/NF_-_DRIFTING_72874017.mp3';
+import vanyaAudio from './MusicAssets/tracks/ann/Vanya_Dmitrienko_-_Mnogojetazhnye_chuvstva_iz_seriala_Plaksa-2_78702208.mp3';
+import aarneAudio from './MusicAssets/tracks/ann/Aarne_BUSHIDO_ZHO_Liza_Evans_-_REVNUYU_78154712.mp3';
+import beautifulBoysAudio from './MusicAssets/tracks/elena/Beautiful_Boys_-_Najjdi_menya_b64f0d176.mp3';
+import timaAudio from './MusicAssets/tracks/elena/Tima_Belorusskikh_-_Aljonka_65045815.mp3';
+import kirillAudio from './MusicAssets/tracks/elena/kirill-mojjton-feat.-beautiful-boys-nezhnaja-ljubov.mp3';
+import queenAudio from './MusicAssets/tracks/michael/Queen_-_The_Show_Must_Go_On_47828534.mp3';
+import korolAudio from './MusicAssets/tracks/michael/Korol_i_SHut_-_Lesnik_62571704.mp3';
+import beatlesAudio from './MusicAssets/tracks/michael/The_Beatles_-_Michelle_47950266.mp3';
+
+
+import nfImage from './MusicAssets/images/ann/nf-drifting.jpeg';
+import vanyaImage from './MusicAssets/images/ann/300x3001.jpeg';
+import aarneImage from './MusicAssets/images/ann/CIWhj9YXBGjL6r_JeDe47GaFOvdcO-vNiz16Cs15wOKhnlDxPQCsFwr1QIY49eoVrNVt_D-O-n7FQJQxMUkXTLjy.jpeg';
+import beautifulBoysImage from './MusicAssets/images/elena/findme-1000x1000x1.png';
+import timaImage from './MusicAssets/images/elena/alenka-1000x1000x1.png';
+import kirillImage from './MusicAssets/images/elena/300x300.jpeg';
+import queenImage from './MusicAssets/images/michael/300x3002.jpeg';
+import korolImage from './MusicAssets/images/michael/300x300.jpeg';
+import beatlesImage from './MusicAssets/images/michael/300x3001.jpeg';
 function MusicPlayer() {
+
   const [playlists] = useState([
     {
       id: 1,
@@ -11,22 +32,22 @@ function MusicPlayer() {
           id: 1,
           title: "DRIFTING",
           artist: "NF",
-          audioSrc: "./MusicAssets/tracks/ann/NF_-_DRIFTING_72874017.mp3",
-          coverSrc: "./MusicAssets/images/ann/nf-drifting.jpeg"
+          audioSrc: nfAudio,
+          coverSrc: nfImage
         },
         {
           id: 2,
           title: "Многоэтажные чувства",
           artist: "Ваня Дмитриенко",
-          audioSrc: "./MusicAssets/tracks/ann/Vanya_Dmitrienko_-_Mnogojetazhnye_chuvstva_iz_seriala_Plaksa-2_78702208.mp3",
-          coverSrc: "./MusicAssets/images/ann/300x300 (1).jpeg"
+          audioSrc: vanyaAudio,
+          coverSrc: vanyaImage
         },
         {
           id: 3,
           title: "РЕВНУЮ",
           artist: "Aarne, Bushido zho, Liza Evans",
-          audioSrc: "./MusicAssets/tracks/ann/Aarne_BUSHIDO_ZHO_Liza_Evans_-_REVNUYU_78154712.mp3",
-          coverSrc: "./MusicAssets/images/ann/CIWhj9YXBGjL6r_JeDe47GaFOvdcO-vNiz16Cs15wOKhnlDxPQCsFwr1QIY49eoVrNVt_D-O-n7FQJQxMUkXTLjy.jpeg"
+          audioSrc: aarneAudio,
+          coverSrc: aarneImage
         },
       ]
     },
@@ -38,25 +59,26 @@ function MusicPlayer() {
           id: 1,
           title: "Найди меня",
           artist: "Beautiful Boys",
-          audioSrc: "./MusicAssets/tracks/elena/Beautiful_Boys_-_Najjdi_menya_b64f0d176.mp3",
-          coverSrc: "./MusicAssets/images/elena/findme-1000x1000x1.png"
+          audioSrc: beautifulBoysAudio,
+          coverSrc: beautifulBoysImage
         },
         {
           id: 2,
           title: "Аленка",
           artist: "Тима Белорусских",
-          audioSrc: "./MusicAssets/tracks/elena/Tima_Belorusskikh_-_Aljonka_65045815.mp3",
-          coverSrc: "./MusicAssets/images/elena/alenka-1000x1000x1 (1).png"
+          audioSrc: timaAudio,
+          coverSrc: timaImage
         },
         {
           id: 3,
           title: "Такая нежная любовь",
           artist: "Киррил Мойтон, Beautiful boys",
-          audioSrc: "./MusicAssets/tracks/elena/kirill-mojjton-feat.-beautiful-boys-nezhnaja-ljubov.mp3",
-          coverSrc: "./MusicAssets/images/elena/300x300.jpeg"
+          audioSrc: kirillAudio,
+          coverSrc: kirillImage
         },
       ]
-    },    {
+    },
+    {
       id: 3,
       name: "Mikhail",
       tracks: [
@@ -64,22 +86,22 @@ function MusicPlayer() {
           id: 1,
           title: "The Show Must Go On",
           artist: "Queen",
-          audioSrc: "./MusicAssets/tracks/michael/Queen_-_The_Show_Must_Go_On_47828534.mp3",
-          coverSrc: "./MusicAssets/images/michael/300x3002.jpeg"
+          audioSrc: queenAudio,
+          coverSrc: queenImage
         },
         {
           id: 2,
           title: "Лесник",
           artist: "Король и Шут",
-          audioSrc: "./MusicAssets/tracks/michael/Korol_i_SHut_-_Lesnik_62571704.mp3",
-          coverSrc: "./MusicAssets/images/michael/300x300.jpeg"
+          audioSrc: korolAudio,
+          coverSrc: korolImage
         },
         {
           id: 3,
           title: "Michelle",
           artist: "The Beatles",
-          audioSrc: "./MusicAssets/tracks/michael/The_Beatles_-_Michelle_47950266.mp3",
-          coverSrc: "./MusicAssets/images/michael/300x300 (1).jpeg"
+          audioSrc: beatlesAudio,
+          coverSrc: beatlesImage
         },
       ]
     }
